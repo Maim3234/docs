@@ -61,6 +61,64 @@ Puedes filtrar por tipo, estado (borrador, en revisión, vigente, archivado), no
   Configura vencimientos por documento (por ejemplo, revisión anual del código de ética). Legal Guard te alertará automáticamente 30 días antes.
 </Tip>
 
+## Firma electrónica
+
+La firma electrónica está integrada en la biblioteca. Cualquier documento publicado puede enviarse a firma desde su ficha, sin salir de Legal Guard y sin herramientas externas. Cada firma queda vinculada a la versión exacta del documento y a la traza de auditoría.
+
+### Quién puede firmar
+
+- **Solicitantes:** usuarios con permiso de aprobación o publicación sobre el documento (por ejemplo, oficial de cumplimiento, gerencia o revisor legal) pueden iniciar la solicitud de firma.
+- **Firmantes:** cualquier persona con cuenta activa en Legal Guard, ya sea trabajador interno o firmante externo invitado por correo. Los firmantes externos acceden con un enlace único y verifican su identidad antes de firmar.
+- **Observadores:** los revisores y auditores con permiso de lectura ven el estado de firma, pero no pueden firmar.
+
+### Cómo iniciar la firma
+
+<Steps>
+  <Step title="Abre el documento">
+    Desde la biblioteca, entra a la ficha de la versión vigente que quieres firmar.
+  </Step>
+  <Step title="Selecciona Enviar a firma">
+    Agrega uno o varios firmantes por correo, define el orden (paralelo o secuencial) y añade un mensaje opcional.
+  </Step>
+  <Step title="Confirma el envío">
+    Legal Guard notifica a cada firmante por correo con el enlace de acceso y registra la solicitud en el historial del documento.
+  </Step>
+</Steps>
+
+### Consentimiento obligatorio
+
+Antes de firmar, cada firmante debe aceptar de forma explícita el consentimiento para usar firma electrónica, declarando que:
+
+- Ha leído el documento completo en la versión mostrada.
+- Acepta que su firma electrónica tiene la misma validez que una firma manuscrita conforme a la Ley 19.799.
+- Autoriza el registro de sus datos de identificación, IP y marca de tiempo para efectos de auditoría.
+
+Sin marcar el consentimiento, el botón de firma permanece deshabilitado. El texto del consentimiento queda archivado junto con la firma.
+
+### Código de verificación y auditoría
+
+Cada firma genera un **código de verificación único** que se incrusta en el documento firmado y queda disponible en la ficha. Con ese código, cualquier tercero puede validar la autenticidad del documento desde el verificador público de Legal Guard.
+
+La traza de auditoría de cada firma incluye:
+
+- Identidad del firmante (nombre, RUT o correo verificado).
+- Fecha y hora exactas de la firma.
+- Dirección IP y dispositivo desde el que se firmó.
+- Hash del documento firmado.
+- Texto del consentimiento aceptado.
+
+Estos registros son inalterables y se exportan como evidencia en formato PDF o JSON.
+
+### Distintivo de documento firmado
+
+Los documentos con firmas activas muestran un **distintivo visible** en la biblioteca y en la ficha del documento:
+
+- Ícono de sello verde junto al nombre del documento.
+- **Contador con el número de firmas** completadas sobre el total solicitado (por ejemplo, `3/5 firmas`).
+- Al pasar el cursor, se muestra el detalle de firmantes y el estado de cada uno (pendiente, firmado, rechazado).
+
+Cuando se recolectan todas las firmas, el distintivo cambia a **Firmado** y el documento queda bloqueado contra ediciones; cualquier modificación posterior obliga a generar una nueva versión y reiniciar el proceso de firma.
+
 ## Enlaces relacionados
 
 - [Configuración](/plataforma/configuracion)
