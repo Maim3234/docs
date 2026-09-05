@@ -1,0 +1,88 @@
+---
+title: "Usuarios y roles: gestiona el acceso a Legal Guard"
+sidebarTitle: "Usuarios y Roles"
+description: "Invita usuarios, asigna roles y controla el acceso a Legal Guard: propietario, oficial, revisor, gestor de casos, auditor, ejecutivo y usuario general."
+---
+
+Desde esta sección administras quién accede a Legal Guard y qué puede hacer cada persona dentro de tu empresa. Cada usuario tiene uno o más roles, y cada rol define un conjunto de permisos revisados en la [matriz de permisos](/referencia/permisos-por-rol).
+
+## Roles disponibles
+
+<CardGroup cols={2}>
+  <Card title="Propietario" icon="crown">
+    Dueño de la empresa cliente. Administra usuarios, plan y configuración general.
+  </Card>
+
+  <Card title="Oficial de cumplimiento" icon="shield">
+    Responsable del modelo. Acceso a todos los módulos operativos. **No puede invitar miembros** (esa acción queda reservada al propietario).
+  </Card>
+
+  <Card title="Revisor legal" icon="scale-balanced">
+    Revisa documentos, contratos y políticas.
+  </Card>
+
+  <Card title="Gestor de casos" icon="folder-open">
+    Investiga casos asignados con acceso al detalle.
+  </Card>
+
+  <Card title="Investigador Ley Karin" icon="user-shield">
+    Gestiona exclusivamente casos e investigaciones bajo Ley 21.643, con acceso al módulo Ley Karin.
+  </Card>
+
+  <Card title="Auditor" icon="magnifying-glass">
+    Acceso de solo lectura y exportación para auditorías, incluyendo riesgos, KPIs y reportes.
+  </Card>
+
+  <Card title="Ejecutivo" icon="chart-line">
+    Vista de indicadores y dashboards ejecutivos.
+  </Card>
+
+  <Card title="Usuario general" icon="user">
+    Trabajador: accede a políticas, capacitaciones y canal interno.
+  </Card>
+</CardGroup>
+
+## Invitar a un usuario
+
+<Note>
+  Solo el **Propietario** puede invitar nuevos miembros. El Oficial de cumplimiento gestiona el programa, pero no puede sumar usuarios.
+</Note>
+
+<Steps>
+  <Step title="Ingresa el correo">
+    Puede ser cuenta corporativa o personal. Recomendamos SSO cuando esté disponible.
+  </Step>
+  <Step title="Asigna uno o más roles">
+    Un usuario puede combinar roles (por ejemplo, oficial + gestor de casos).
+  </Step>
+  <Step title="Define alcance">
+    Empresa completa o unidades organizativas específicas.
+  </Step>
+  <Step title="Envía invitación">
+    El usuario recibe correo con enlace de activación y guía inicial.
+  </Step>
+</Steps>
+
+## Autenticación en dos pasos
+
+Recomendado para todos los roles con acceso a denuncias o casos. Puedes exigirlo obligatoriamente desde configuración.
+
+## Ciclo de vida de un usuario
+
+- **Invitado:** aún no ha activado la cuenta.
+- **Activo:** operación normal.
+- **Bloqueado:** por seguridad o solicitud del propietario.
+- **Desactivado:** el usuario deja de acceder pero su historial se conserva.
+
+<Warning>
+  Nunca elimines usuarios que participaron en investigaciones o firmaron políticas. Desactivarlos preserva la trazabilidad y la evidencia para auditorías.
+</Warning>
+
+## Cambios de rol
+
+Los cambios de rol son inmediatos. Cada cambio queda registrado con autor, fecha y motivo opcional.
+
+## Enlaces relacionados
+
+- [Permisos por rol](/referencia/permisos-por-rol)
+- [Configuración](/plataforma/configuracion)

@@ -1,0 +1,53 @@
+---
+title: "posiciones"
+sidebarTitle: "Posiciones"
+description: "Administra la estructura de cargos y posiciones de tu empresa en Legal Guard: jerarquía, cargo reservado Propietario y asignación de responsables."
+---
+
+Desde Posiciones defines la estructura de cargos de tu empresa dentro de Legal Guard. Esta estructura se utiliza para asignar responsables a tareas del plan, controles del catálogo de riesgos, casos e investigaciones, y para reflejar la jerarquía real en los reportes.
+
+## Diferencia entre posición y usuario
+
+- Una **posición** describe un cargo (por ejemplo, Gerente de Recursos Humanos), independiente de quién la ocupe.
+- Un **usuario** es una persona concreta que puede ocupar una o más posiciones.
+
+Esto permite mantener la trazabilidad histórica aunque cambien las personas: si el Gerente de RRHH cambia, los casos y controles asignados al cargo siguen accesibles al nuevo ocupante.
+
+## Cargo reservado: Propietario
+
+<Warning>
+El cargo **Propietario** es un cargo reservado del sistema. Existe una única posición Propietario por empresa y no puede eliminarse. Cambiar su ocupante requiere confirmación del superadministrador.
+</Warning>
+
+Este cargo concentra decisiones críticas: invitar miembros, decidir sanciones, aprobar el reseteo del plan.
+
+## Cómo administrar posiciones
+
+<Steps>
+  <Step title="Crea una posición">
+    Ingresa nombre del cargo, área, cargo superior (para armar el organigrama) y descripción.
+  </Step>
+  <Step title="Asigna ocupantes">
+    Vincula uno o más usuarios existentes a la posición.
+  </Step>
+  <Step title="Define responsabilidades por defecto">
+    Marca qué acciones de compliance recaen habitualmente sobre esta posición (por ejemplo, controles de anticorrupción sobre Compras).
+  </Step>
+  <Step title="Actualiza al ocurrir cambios">
+    Al mover a un usuario a otra posición, los pendientes se reasignan al nuevo ocupante con notificación.
+  </Step>
+</Steps>
+
+## Vista de organigrama
+
+El módulo entrega una vista jerárquica de todas las posiciones, útil para:
+
+- Presentar la estructura al comité de ética.
+- Verificar cobertura de controles por área.
+- Identificar posiciones sin ocupante activo.
+
+## Enlaces relacionados
+
+- [Usuarios y roles](/administracion/usuarios-roles)
+- [Empresas](/administracion/empresas)
+- [Configuración](/plataforma/configuracion)

@@ -1,0 +1,80 @@
+---
+title: "Permisos por rol en Legal Guard: matriz completa"
+sidebarTitle: "Permisos por Rol"
+description: "Consulta qué acciones puede realizar cada rol en Legal Guard: matriz con Superadministrador, Propietario, Oficial, Revisor, Gestor, Investigador Karin y más."
+---
+
+Legal Guard asigna permisos según el rol de cada usuario para proteger la confidencialidad de las denuncias, los datos personales y la integridad del modelo de prevención. En esta página encontrarás una matriz que cruza acciones clave con los nueve roles disponibles para que sepas exactamente qué puedes hacer en cada módulo.
+
+<Info>
+  Los permisos mostrados son los predeterminados del sistema. El Superadministrador puede ajustar ciertos alcances desde el panel de Configuración.
+</Info>
+
+## Matriz de permisos
+
+| Acción | Superadministrador | Propietario | Oficial de cumplimiento | Revisor legal | Gestor de casos | Investigador Karin | Auditor | Ejecutivo | Usuario general | Denunciante externo |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Crear caso de investigación | ✅ | ✅ | ✅ | ⚠️ | ✅ | ⚠️ | ❌ | ❌ | ❌ | ❌ |
+| Editar caso asignado | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Cerrar o archivar caso | ✅ | ✅ | ✅ | ❌ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ❌ |
+| Gestionar casos Ley Karin | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ⚠️ | ❌ | ❌ | ❌ |
+| Ver denuncias anónimas | ✅ | ✅ | ✅ | ⚠️ | ✅ | ⚠️ | ⚠️ | ❌ | ❌ | N/A |
+| Ver identidad del denunciante (solo si autorizó) | ✅ | ✅ | ✅ | ⚠️ | ✅ | ⚠️ | ⚠️ | ❌ | ❌ | N/A |
+| Crear riesgo en catálogo (`can_manage_riesgos`) | ✅ | ✅ | ✅ | ⚠️ | ❌ | ❌ | ❌ | ⚠️ | ❌ | ❌ |
+| Aprobar riesgo | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Ejecutar autodiagnóstico (`can_view_diagnostico`) | ✅ | ✅ | ✅ | ✅ | ⚠️ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| Generar catálogo con IA (`can_manage_riesgos`) | ✅ | ⚠️ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Resetear plan de implementación | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Ver panel (`can_view_dashboard`) | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ✅ | ❌ | ❌ |
+| Ver KPIs | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ✅ | ❌ | ❌ |
+| Publicar política en biblioteca | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Subir documento a biblioteca | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ❌ | ⚠️ | ❌ | ❌ |
+| Enviar denuncia por canal | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | ✅ | ✅ |
+| Ver estado de denuncia propia | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
+| Ver informes de cumplimiento | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ✅ | ❌ | ❌ |
+| Invitar usuarios y gestionar roles | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Configurar flujos de aprobación | ✅ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Ver checklist contractual | ✅ | ✅ | ✅ | ✅ | ⚠️ | ❌ | ⚠️ | ✅ | ❌ | ❌ |
+| Acceder a coaching de cumplimiento | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ❌ | ✅ | ❌ | ❌ |
+| Ejecutar auditoría / emitir certificado | ✅ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| Exportar datos a Excel / PDF | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ⚠️ | ❌ | ❌ |
+| Eliminar registros permanentemente | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+
+## Significado de los símbolos
+
+- **✅** Permiso completo: el rol puede ejecutar la acción sin restricciones adicionales.
+- **⚠️** Permiso parcial: el rol puede ejecutar la acción en ciertos contextos (por ejemplo, solo casos asignados, solo su área o con autorización previa).
+- **❌** Sin permiso: la acción no está disponible para ese rol.
+- **N/A** No aplica: el rol no interactúa con esa funcionalidad.
+
+## Consideraciones importantes
+
+<Warning>
+  El rol de Denunciante externo solo puede enviar denuncias y ver el estado de sus propios reportes. No tiene acceso a ningún otro módulo de la plataforma.
+</Warning>
+
+<Note>
+  El **Oficial de cumplimiento** administra el programa pero **no puede invitar miembros**: la gestión de usuarios está reservada al Propietario (y al Superadministrador a nivel plataforma).
+</Note>
+
+<Note>
+  El **Investigador Ley Karin** existe específicamente para casos regidos por la Ley 21.643. Puede gestionar denuncias y casos Karin, pero no accede al resto del programa de compliance.
+</Note>
+
+<Tip>
+  Si necesitas que un rol tenga permiso adicional, contacta al Superadministrador de tu empresa. Algunos permisos parciales pueden ampliarse desde Configuración > Roles y permisos.
+</Tip>
+
+<AccordionGroup>
+  <Accordion title="¿Por qué el Auditor no puede crear casos?">
+    El rol Auditor está diseñado para revisión independiente sin capacidad de intervención operativa. Puede consultar informes y evidencias, pero no modificar registros ni abrir investigaciones. Esto garantiza la separación de funciones exigida por los estándares de compliance.
+  </Accordion>
+
+  <Accordion title="¿Puede el Ejecutivo aprobar riesgos?">
+    No. Aunque el Ejecutivo puede visualizar el catálogo de riesgos y participar en el autodiagnóstico, la aprobación de riesgos está reservada para los roles con responsabilidad directa en el modelo de prevención: Superadministrador, Propietario, Oficial de cumplimiento y Revisor legal.
+  </Accordion>
+
+  <Accordion title="¿Qué significa 'parcial' para el Revisor legal?">
+    El Revisor legal puede ver denuncias y participar en casos que le sean asignados expresamente, pero no tiene acceso automático a todas las denuncias ni puede cerrar investigaciones por sí solo.
+  </Accordion>
+</AccordionGroup>

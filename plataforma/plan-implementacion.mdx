@@ -1,0 +1,103 @@
+---
+title: "Plan de Implementación: fases y tareas de tu programa"
+sidebarTitle: "Plan de Implementación"
+description: "Ejecuta la hoja de ruta generada desde el autodiagnóstico, gestiona estados de tareas (pendiente, en progreso, completada, validada) y controla el avance."
+---
+
+El plan de implementación es la hoja de ruta operativa que traduce las brechas del autodiagnóstico en fases y tareas concretas con responsable, estado y evidencia. Se genera automáticamente a partir del resultado del [Autodiagnóstico](/plataforma/autodiagnostico) y se actualiza a medida que el equipo avanza.
+
+## Requisitos
+
+- Permiso **Ver panel** (`can_view_dashboard`) para consultar el plan.
+- Un [Autodiagnóstico](/plataforma/autodiagnostico) completado. Sin plan, la pantalla muestra "Sin plan de implementación" con acceso directo al autodiagnóstico.
+- Rol **Propietario** o **Oficial de cumplimiento** para resetear el plan.
+
+## Cómo se genera
+
+<Steps>
+  <Step title="Completa el autodiagnóstico">
+    Responde el cuestionario y revisa el resultado.
+  </Step>
+  <Step title="Genera el plan desde el resultado">
+    En la pantalla de resultado del autodiagnóstico usa la acción **Generar plan de implementación**. Legal Guard crea fases y tareas basadas en las brechas detectadas y en el ámbito evaluado.
+  </Step>
+  <Step title="Actualiza el estado de las tareas">
+    Desde la vista del plan, cada tarea cambia entre Pendiente, En Progreso, Completada y Validada.
+  </Step>
+</Steps>
+
+## Estados de tarea y de fase
+
+Cada tarea tiene cuatro estados:
+
+| Estado | Significado |
+| --- | --- |
+| Pendiente | Aún no se ha iniciado. |
+| En Progreso | El responsable la está trabajando. |
+| Completada | El trabajo terminó y espera validación. |
+| Validada | Un revisor confirmó el cierre. |
+
+El estado de la fase se calcula automáticamente a partir de sus tareas:
+
+- **Pendiente:** ninguna tarea comenzada.
+- **En Progreso:** al menos una tarea con avance.
+- **Completada:** todas las tareas completadas o validadas.
+- **Validada:** todas las tareas están validadas.
+
+## Indicadores del panel
+
+En la parte superior del plan verás cuatro KPIs:
+
+<CardGroup cols={2}>
+  <Card title="Progreso General" icon="chart-line">
+    Porcentaje de tareas completadas o validadas sobre el total.
+  </Card>
+
+  <Card title="Completadas" icon="circle-check">
+    Cantidad de tareas cerradas.
+  </Card>
+
+  <Card title="En Progreso" icon="clock">
+    Tareas activas en curso.
+  </Card>
+
+  <Card title="Pendientes" icon="circle-exclamation">
+    Tareas aún sin comenzar.
+  </Card>
+</CardGroup>
+
+## Resetear el plan
+
+<Warning>
+  El reseteo elimina permanentemente **todas** las fases y tareas del plan de tu empresa. La acción no se puede deshacer.
+</Warning>
+
+Solo el **Propietario** o el **Oficial de cumplimiento** pueden ejecutar el reseteo. El botón "Resetear Plan" aparece en la esquina superior derecha.
+
+<Steps>
+  <Step title="Solicita el reseteo">
+    Haz clic en **Resetear Plan** y confirma que entiendes las consecuencias.
+  </Step>
+  <Step title="Escribe ELIMINAR">
+    Como confirmación adicional, Legal Guard exige escribir literalmente la palabra **ELIMINAR** en el campo de texto.
+  </Step>
+  <Step title="Confirma">
+    Al confirmar, el plan se elimina y la aplicación te redirige al [Autodiagnóstico](/plataforma/autodiagnostico) para generar uno nuevo.
+  </Step>
+</Steps>
+
+<Tip>
+  Antes de resetear, considera exportar el estado actual del plan desde [Informes](/plataforma/informes) para dejar evidencia histórica del avance previo.
+</Tip>
+
+## Relación con otros módulos
+
+- El [Generador de catálogo con IA](/plataforma/generador-catalogo-ia) usa las tareas pendientes del plan para calcular la probabilidad inherente de los riesgos: mientras más brechas abiertas, mayor exposición asumida.
+- El [Dashboard](/plataforma/dashboard) muestra el avance del plan por ámbito.
+- Los [KPIs](/plataforma/kpis) incluyen "Progreso del plan" y "Tareas completadas".
+
+## Enlaces relacionados
+
+- [Autodiagnóstico](/plataforma/autodiagnostico)
+- [Catálogo de riesgos](/plataforma/catalogo-riesgos)
+- [Informes](/plataforma/informes)

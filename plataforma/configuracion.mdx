@@ -1,0 +1,72 @@
+---
+title: "Configuración: personaliza Legal Guard para tu empresa"
+sidebarTitle: "Configuración"
+description: "Ajusta los datos de la empresa, la estructura organizativa, las notificaciones, integraciones y políticas de retención de Legal Guard."
+---
+
+El módulo de configuración concentra todos los ajustes de tu empresa dentro de Legal Guard. Aquí defines identidad visual, estructura organizativa, canales de notificación, integraciones y políticas de retención. Estos ajustes impactan cómo se presentan formularios públicos, informes y comunicaciones.
+
+## Secciones principales
+
+<CardGroup cols={2}>
+  <Card title="Datos de la empresa" icon="building">
+    Razón social, RUT, giro, domicilio, representante legal, logo.
+  </Card>
+
+  <Card title="Unidades organizativas" icon="sitemap">
+    Gerencias, sucursales, filiales. Permite reportería segmentada.
+  </Card>
+
+  <Card title="Notificaciones" icon="bell">
+    Correos y avisos in-app por evento (denuncias, casos, vencimientos).
+  </Card>
+
+  <Card title="Integraciones" icon="plug">
+    SSO (Google, Microsoft), correo saliente, almacenamiento externo.
+  </Card>
+
+  <Card title="Políticas de retención" icon="clock">
+    Plazos de conservación de documentos, casos y contratos.
+  </Card>
+
+  <Card title="Idioma y zona horaria" icon="globe">
+    Ajustes regionales de la instancia.
+  </Card>
+</CardGroup>
+
+## Datos de la empresa
+
+Se muestran en el formulario público del canal de denuncias, en los encabezados de informes y en documentos legales generados por la plataforma. Manténlos siempre actualizados.
+
+## Notificaciones
+
+<Steps>
+  <Step title="Elige el evento">
+    Por ejemplo: nueva denuncia recibida, caso próximo a vencer, tarea atrasada.
+  </Step>
+  <Step title="Selecciona destinatarios">
+    Por rol o por usuario específico.
+  </Step>
+  <Step title="Define el canal">
+    Correo electrónico, notificación in-app o resumen diario.
+  </Step>
+</Steps>
+
+## Integraciones
+
+- **SSO:** habilita inicio de sesión con Google Workspace o Microsoft 365 para simplificar el acceso.
+- **Correo saliente:** configura tu propio servidor SMTP para enviar comunicaciones desde tu dominio.
+- **Almacenamiento externo:** conecta almacenamiento propio para evidencias muy pesadas.
+
+<Warning>
+  Antes de habilitar SSO, valida con tu equipo de TI las políticas de acceso condicional y de dispositivos. Un mal despliegue puede bloquear el acceso al canal de denuncias.
+</Warning>
+
+## Políticas de retención
+
+Configura por tipo de dato (contratos, denuncias, informes) el plazo mínimo de conservación y la regla de eliminación posterior. Alinea estos plazos con la Ley 21.719 y con tus políticas internas.
+
+## Enlaces relacionados
+
+- [Usuarios y roles](/administracion/usuarios-roles)
+- [Permisos por rol](/referencia/permisos-por-rol)

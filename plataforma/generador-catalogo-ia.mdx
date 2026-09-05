@@ -1,0 +1,92 @@
+---
+title: "Generador de catálogo con IA: crea tu mapa de riesgos por ámbito"
+sidebarTitle: "Generador con IA"
+description: "Genera el catálogo de riesgos con IA por cada ámbito de compliance en Legal Guard. Requiere autodiagnóstico completado y plan de implementación generado."
+---
+
+El generador con IA construye el catálogo de riesgos de tu empresa a partir de una descripción de tus actividades, tu sitio web y documentos que aportes. La generación se hace por ámbito de compliance de forma independiente, y los riesgos se incorporan al catálogo definitivo apenas se aprueban.
+
+## Requisitos previos
+
+<Warning>
+  El generador solo se activa cuando la empresa ha completado estos dos pasos. Si intentas ingresar antes, verás un aviso con los pasos pendientes y un botón para ir al que falta.
+
+  1. **Completar el [Autodiagnóstico](/plataforma/autodiagnostico).** La IA usa el resultado como línea base.
+  2. **Generar el [Plan de Implementación](/plataforma/plan-implementacion).** La IA revisa las tareas pendientes del plan para identificar los riesgos vigentes por brecha; si el plan está 100% completado, refleja probabilidades inherentes más bajas.
+</Warning>
+
+Además, tu usuario debe contar con el permiso **Gestionar riesgos** (`can_manage_riesgos`).
+
+<Note>
+  Si tu empresa ya tiene riesgos cargados en el catálogo, la ruta del generador redirige automáticamente al [Catálogo de riesgos](/plataforma/catalogo-riesgos) para evitar duplicaciones. Desde el catálogo puedes editar los riesgos existentes o generar los ámbitos que aún no cubres.
+</Note>
+
+## Cuándo usarlo
+
+- Implementas Legal Guard por primera vez.
+- Incorporas una nueva línea de negocio o filial.
+- Necesitas comparar tu catálogo actual contra un estándar sectorial.
+
+## Cómo funciona
+
+<Steps>
+  <Step title="Describe tu organización">
+    Ingresa una descripción de las actividades de la empresa (mientras más detallada, mejor), opcionalmente la URL del sitio web y, si quieres, sube documentos en formato **PDF o CSV** (por ejemplo, catálogos existentes). Al menos una de las tres entradas es obligatoria.
+  </Step>
+  <Step title="Genera cada ámbito">
+    Verás cuatro tarjetas, una por cada ámbito de compliance. Haz clic en **Generar** en el que quieras trabajar. Puedes generarlos en el orden que prefieras y saltar de uno a otro.
+
+    <CardGroup cols={2}>
+      <Card title="Delitos económicos" icon="scale-balanced">
+        Cohecho, lavado de activos, fraude, delitos tributarios, corrupción entre particulares y delitos societarios.
+      </Card>
+
+      <Card title="Laboral / Ley Karin" icon="user-shield">
+        Acoso laboral, acoso sexual, violencia en el trabajo y deficiencias de protocolo Ley Karin.
+      </Card>
+
+      <Card title="Ciberseguridad" icon="shield">
+        Brechas de datos, ransomware, accesos no autorizados y obligación de reporte al CSIRT.
+      </Card>
+
+      <Card title="Medio Ambiente" icon="leaf">
+        Contaminación, residuos peligrosos, permisos ambientales y responsabilidad penal corporativa.
+      </Card>
+    </CardGroup>
+  </Step>
+  <Step title="Espera el análisis">
+    La IA puede tardar hasta un par de minutos por ámbito. Si el procesamiento excede el tiempo permitido, verás un aviso y podrás reintentar solo ese ámbito.
+  </Step>
+  <Step title="Revisa cada riesgo">
+    Los riesgos generados se incorporan al catálogo como candidatos. Para cada uno puedes **Editar** (nombre, descripción, probabilidad, impacto, controles sugeridos), **Descartar** (queda archivado y se puede recuperar) o **Re-incorporar** si lo habías descartado.
+  </Step>
+  <Step title="Finaliza la revisión">
+    Al terminar, el catálogo queda actualizado con los riesgos aprobados. Puedes volver más tarde a generar los ámbitos que dejaste pendientes.
+  </Step>
+</Steps>
+
+## Reanudar una sesión
+
+Si sales antes de terminar, al volver al generador retomas exactamente donde estabas: se recuperan los candidatos ya guardados y las tarjetas de los ámbitos completados quedan marcadas. Los ámbitos que faltan se muestran como pendientes con el botón **Generar**.
+
+Desde el [Catálogo de riesgos](/plataforma/catalogo-riesgos), cuando existen ámbitos no cubiertos, aparece el botón **Generar ámbitos pendientes** que te lleva directo al generador.
+
+## Regenerar un ámbito
+
+Si un ámbito ya tiene riesgos generados y quieres rehacerlo, usa **Regenerar** en la tarjeta correspondiente. Los nuevos riesgos se agregan al catálogo sin borrar los anteriores; luego puedes descartar los que ya no correspondan.
+
+## Buenas prácticas
+
+<Warning>
+  La propuesta de la IA es un punto de partida. Debes validarla con tu equipo legal y de operaciones para asegurar que refleja la realidad de la empresa. Nunca publiques el catálogo sin revisión humana.
+</Warning>
+
+- Regenera la propuesta si actualizas datos clave (fusión, cambio de giro, nueva línea de negocio).
+- Ajusta probabilidad e impacto según la eficacia real de los controles vigentes.
+- Documenta en el detalle de cada riesgo el motivo de aceptar, editar o descartar la sugerencia.
+
+## Enlaces relacionados
+
+- [Catálogo de riesgos](/plataforma/catalogo-riesgos)
+- [Autodiagnóstico](/plataforma/autodiagnostico)
+- [Plan de implementación](/plataforma/plan-implementacion)

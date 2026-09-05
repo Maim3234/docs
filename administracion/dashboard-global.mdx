@@ -1,0 +1,67 @@
+---
+title: "Dashboard global: visión cross-empresa del superadministrador"
+sidebarTitle: "Dashboard Global"
+description: "Monitorea el uso, la salud del cumplimiento y las denuncias en todas las empresas cliente de Legal Guard desde el panel del superadministrador."
+---
+
+El dashboard global consolida datos agregados de todas las empresas cliente que operan en tu instancia de Legal Guard. Está pensado para el equipo de superadministración: producto, soporte, éxito del cliente y liderazgo, para tomar decisiones informadas sobre adopción y calidad.
+
+## Vistas incluidas
+
+<CardGroup cols={2}>
+  <Card title="Adopción" icon="chart-line">
+    Empresas activas, usuarios por rol, sesiones semanales, tiempo de respuesta.
+  </Card>
+
+  <Card title="Salud del cumplimiento" icon="heart-pulse">
+    Índice de madurez promedio, brechas críticas, avance del plan por empresa.
+  </Card>
+
+  <Card title="Canal y casos" icon="folder-open">
+    Denuncias recibidas, casos abiertos, plazos Ley Karin en riesgo por empresa.
+  </Card>
+
+  <Card title="Soporte" icon="life-ring">
+    Tickets abiertos, tiempo de resolución, satisfacción.
+  </Card>
+</CardGroup>
+
+## Filtros disponibles
+
+- Rango de fechas.
+- Sector o tamaño de empresa.
+- Plan comercial.
+- Región o país.
+
+## Cómo interpretar los indicadores
+
+- **Empresas activas:** con al menos una sesión en los últimos 7 días.
+- **Índice de madurez promedio:** promedio ponderado de los autodiagnósticos publicados.
+- **Casos en riesgo:** casos cuyo plazo legal (Ley Karin, por ejemplo) vence en menos de 5 días hábiles.
+
+<Warning>
+  La agregación respeta la confidencialidad: nunca se muestran datos personales de denunciantes ni contenido de denuncias específicas. Los indicadores son estadísticos.
+</Warning>
+
+## Acciones desde el dashboard
+
+<Steps>
+  <Step title="Detecta empresas con bajo uso">
+    Filtra por sesiones y contacta al propietario para ofrecer soporte.
+  </Step>
+  <Step title="Identifica riesgos operativos">
+    Empresas con muchos casos en riesgo pueden requerir capacitación adicional.
+  </Step>
+  <Step title="Prioriza mejoras al producto">
+    Los patrones de uso alimentan la hoja de ruta de Legal Guard.
+  </Step>
+</Steps>
+
+## Exportación
+
+Puedes exportar la vista completa o cualquier widget en CSV o PDF para reportar internamente o compartir con socios.
+
+## Enlaces relacionados
+
+- [Empresas](/administracion/empresas)
+- [Usuarios y roles](/administracion/usuarios-roles)

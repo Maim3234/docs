@@ -1,0 +1,60 @@
+---
+title: "Gestión de empresas: administra tus clientes en Legal Guard"
+sidebarTitle: "Empresas"
+description: "Crea, edita, suspende y monitorea empresas cliente desde el panel del superadministrador de Legal Guard, con planes, límites y propietarios asignados."
+---
+
+Esta sección está dirigida al superadministrador de la plataforma. Aquí puedes crear y mantener las empresas cliente (tenants) que operan sobre Legal Guard, incluyendo su plan, límites de uso, propietario asignado y estado.
+
+## Panel de empresas
+
+<CardGroup cols={2}>
+  <Card title="Listado" icon="building">
+    Vista con todas las empresas, propietario, plan, estado y último acceso.
+  </Card>
+
+  <Card title="Métricas de uso" icon="chart-line">
+    Denuncias recibidas, casos abiertos, usuarios activos por empresa.
+  </Card>
+</CardGroup>
+
+## Crear una empresa
+
+<Steps>
+  <Step title="Datos legales">
+    Razón social, RUT, giro, dirección, país (por defecto Chile).
+  </Step>
+  <Step title="Propietario">
+    Asigna el correo del propietario. Se enviará invitación automática.
+  </Step>
+  <Step title="Plan y límites">
+    Selecciona el plan comercial y los límites de usuarios, casos y documentos.
+  </Step>
+  <Step title="Activación">
+    La empresa queda activa. El propietario recibe un enlace para configurar su instancia.
+  </Step>
+</Steps>
+
+## Estados de una empresa
+
+- **Activa:** operación normal, todos los módulos disponibles.
+- **Suspendida:** solo lectura, no se pueden crear casos ni denuncias nuevas.
+- **En prueba:** acceso limitado por tiempo o funcionalidades.
+- **Archivada:** empresa fuera de servicio; los datos se conservan según política de retención.
+
+## Cambios de propietario
+
+Puedes transferir la propiedad a otro usuario administrador de la empresa. El propietario anterior conserva su cuenta pero pierde los permisos exclusivos del rol.
+
+<Warning>
+  Suspender una empresa afecta inmediatamente al canal público de denuncias: los formularios quedan en modo de solo lectura y muestran un aviso configurable. Coordina esta acción con el propietario.
+</Warning>
+
+## Auditoría de acciones
+
+Cada acción sobre una empresa (creación, edición, cambio de plan, suspensión) queda registrada con autor, fecha, IP y navegador. Este registro es exportable.
+
+## Enlaces relacionados
+
+- [Usuarios y roles](/administracion/usuarios-roles)
+- [Dashboard global](/administracion/dashboard-global)
