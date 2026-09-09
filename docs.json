@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "Legal Guard",
   "colors": {
-    "primary": "#f0f3f1",
+    "primary": "#ffffff",
     "light": "#068fc9",
     "dark": "#144180"
   },
@@ -136,5 +136,11 @@
   },
   "appearance": {
     "strict": false
+  },
+  "background": {
+    "decoration": "gradient",
+    "color": {
+      "dark": "#686868"
+    }
   }
 }
