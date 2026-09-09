@@ -1,0 +1,5 @@
+/* Double the Legal Guard header logo while preserving its proportions. */
+img.nav-logo {
+  height: 3.5rem !important;
+  width: auto !important;
+}
